@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(278%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(308%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EI%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#527b14">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My Interactive Portfolio | deployed with HTMLaunch">
+<link rel="canonical" href="https://advithreddy1817-oss.github.io/my-interactive-portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="My Interactive Portfolio">
+<meta property="og:title" content="My Interactive Portfolio">
+<meta property="og:description" content="My Interactive Portfolio | deployed with HTMLaunch">
+<meta property="og:url" content="https://advithreddy1817-oss.github.io/my-interactive-portfolio/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fadvithreddy1817-oss.github.io%2Fmy-interactive-portfolio%2F?w=1200&h=630">
+<meta property="og:image:alt" content="My Interactive Portfolio">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="My Interactive Portfolio">
+<meta name="twitter:description" content="My Interactive Portfolio | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fadvithreddy1817-oss.github.io%2Fmy-interactive-portfolio%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="My Interactive Portfolio">
+
+<title>My Interactive Portfolio</title>
+</head>
+
+<body id="page">
+
+<h1 id="title">
+My Interactive Portfolio
+</h1>
+
+<hr>
+
+<h2>Enter Your Name</h2>
+
+<input type="text" id="name">
+
+<button onclick="showName()">
+Submit
+</button>
+
+<p id="result"></p>
+
+<hr>
+
+<h2>Change Heading Color</h2>
+
+<button onclick="redColor()">
+Red
+</button>
+
+<button onclick="blueColor()">
+Blue
+</button>
+
+<button onclick="greenColor()">
+Green
+</button>
+
+<hr>
+
+<h2>Change Background Color</h2>
+
+<button onclick="yellowBackground()">
+Yellow
+</button>
+
+<button onclick="lightBlueBackground()">
+Light Blue
+</button>
+
+<hr>
+
+<h2>Secret Message</h2>
+
+<p id="secret" style="display:none;">
+🎉 Congratulations! You completed JavaScript.
+</p>
+
+<button onclick="showMessage()">
+Show Message
+</button>
+
+<button onclick="hideMessage()">
+Hide Message
+</button>
+
+<script>
+
+function showName()
+{
+    var student =
+    document.getElementById("name").value;
+
+    document.getElementById("result").innerHTML =
+    "Welcome " + student;
+}
+
+function redColor()
+{
+    document.getElementById("title").style.color =
+    "red";
+}
+
+function blueColor()
+{
+    document.getElementById("title").style.color =
+    "blue";
+}
+
+function greenColor()
+{
+    document.getElementById("title").style.color =
+    "green";
+}
+
+function yellowBackground()
+{
+    document.getElementById("page").style.backgroundColor =
+    "yellow";
+}
+
+function lightBlueBackground()
+{
+    document.getElementById("page").style.backgroundColor =
+    "lightblue";
+}
+
+function showMessage()
+{
+    document.getElementById("secret").style.display =
+    "block";
+}
+
+function hideMessage()
+{
+    document.getElementById("secret").style.display =
+    "none";
+}
+
+</script>
+
+</body>
+</html>
